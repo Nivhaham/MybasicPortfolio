@@ -10970,3 +10970,20 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+.lucas-photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 100vw; /* 100% of the viewport width */
+  margin: -50px 0 0 0; /* Remove margin to ensure full width */
+}
+
+.lucas-photos img {
+  flex: 0 0 calc(33.33% - 10px); /* Adjust the width with spacing between images */
+  max-width: calc(33.33% - 10px); /* Adjust the width with spacing between images */
+  height: auto;
+  margin: 5px; /* Add small spacing between images */
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
