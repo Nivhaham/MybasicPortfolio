@@ -3,9 +3,33 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Niv Dagan's Website</title>
+        <meta name="description" content="Niv Dagan - Technology Professional | Network Engineering, Cybersecurity, Python Development | Portfolio" />
+        <meta name="author" content="Niv Dagan" />
+        <meta name="keywords" content="Niv Dagan, Network Engineer, Cybersecurity, Python Developer, DevOps, Cloud Computing" />
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="#" />
+        <meta property="og:title" content="Niv Dagan - Technology Professional Portfolio" />
+        <meta property="og:description" content="Versatile technology professional with solid background in network engineering and cybersecurity. Proficient in Python and TypeScript." />
+        <meta property="og:image" content="assets/img/Lucas/profile3.jpg" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="#" />
+        <meta property="twitter:title" content="Niv Dagan - Technology Professional Portfolio" />
+        <meta property="twitter:description" content="Versatile technology professional with solid background in network engineering and cybersecurity. Proficient in Python and TypeScript." />
+        <meta property="twitter:image" content="assets/img/Lucas/profile3.jpg" />
+        
+        <title>Niv Dagan - Technology Professional | Portfolio</title>
+        
+        <!-- PWA Manifest -->
+        <link rel="manifest" href="manifest.json">
+        <meta name="theme-color" content="#667eea">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="apple-mobile-web-app-title" content="Niv Dagan Portfolio">
+        
         <!-- I added this devicon option-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicons@1.8.0/css/devicons.min.css">
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
@@ -22,7 +46,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Niv Dagan</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Lucas/20230328_122619.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/Lucas/profile3.jpg" alt="Niv Dagan Profile Picture" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -30,10 +54,12 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">My Philosophy</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#lucas">Bonus</a></li>
-                    <!--<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Projects</a></li>-->
                 </ul>
             </div>
         </nav>
@@ -46,27 +72,29 @@
                         Niv
                         <span class="text-primary">Dagan</span>
                     </h1>
-                    
-                    <br>
+                    <div class="subheading mb-3">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:daganniv@gmail.com">daganniv@gmail.com</a>
+                        <span class="mx-3">|</span>
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:+972506781292">+972-50-678-1292</a>
+                        <span class="mx-3">|</span>
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Israel
+                    </div>
                     <br>
                     <p class="lead mb-5">
-                        Versatile technology professional with Solid background in network engineering <br>
-                        and cybersecurity. Proficient in Python and TypeScript. <br>
-                        Skilled in cloud computing, DevOps, and cybersecurity measures. <br>
-                        Passionate about automating processes and optimizing data infrastructure. <br>
-                        Proactive problem-solver with a collaborative approach to achieving objectives. <br>
-
-                        <!--Passionate and results-driven software engineer <br>
-                        with a proficiency in Python Java and TypeScript.<br>
-                        Committed to delivering high-quality solutions <br>
-                        through a solid foundation of technical expertise <br>
-                        and a proactive approach to problem-solving.-->
-                        </p>
-                        <div class="social-icons"> 
-                        <a id="linkdin" class="social-icon" href="https://www.linkedin.com/in/niv-dagan/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a id="github" class="social-icon" href="https://github.com/Nivhaham" target="_blank"><i class="fab fa-github"></i></a>
-                        <a id="email" class="social-icon" href="mailto:daganniv@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                        <a id="whatsapp" class="social-icon" href="//api.whatsapp.com/send?phone=+972506781292MOBILE_NUMBER&text= Hi Niv! I saw your portfolio, Let's talk!" target = _blank><i class="fa-brands fa-whatsapp" ></i></a>
+                        Versatile technology professional with solid background in network engineering 
+                        and cybersecurity. Proficient in Python and TypeScript with expertise in 
+                        cloud computing, DevOps, and cybersecurity measures. 
+                        Passionate about automating processes and optimizing data infrastructure. 
+                        Proactive problem-solver with a collaborative approach to achieving objectives.
+                    </p>
+                    <div class="social-icons"> 
+                        <a id="linkdin" class="social-icon" href="https://www.linkedin.com/in/niv-dagan/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        <a id="github" class="social-icon" href="https://github.com/Nivhaham" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a id="email" class="social-icon" href="mailto:daganniv@gmail.com" target="_blank" aria-label="Email Contact"><i class="fa-solid fa-envelope"></i></a>
+                        <a id="whatsapp" class="social-icon" href="//api.whatsapp.com/send?phone=+972506781292&text=Hi Niv! I saw your portfolio, Let's talk!" target="_blank" aria-label="WhatsApp Contact"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </section>
@@ -75,29 +103,17 @@
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Experience</h2>
-                    <!--
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Engineer</h3>
-                            <div class="subheading mb-3">Petit</div>
-                            <p>Developed and deployed microservices in GCP with Flask as
-                                the primary framework.<br> Experienced in containerization, serverless
-                                computing, API design, and robust security practices.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">October 2022 - September 2023</span></div>
-                    </div>
-                    -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Python and Networking Instructor</h3>
                             <div class="subheading mb-3">Cyber Education Center - "Magshimim"</div>
-                            <p>Instructor for Python programming and computer networking.<br>
-                                Teaching security practices,tools, and concepts <br>
-                                such as: packet sniffing, DDOS, Phishing and Application security. <br>
-                                Through engaging lessons and interactive activities,<br> 
-                                I facilitated hands-on learning experiences <br>
-                                that allowed students to grasp complex concepts in an accessible manner.
-                                </p>
+                            <p>Instructor for Python programming and computer networking, teaching security practices, tools, and concepts such as packet sniffing, DDOS, phishing, and application security. Through engaging lessons and interactive activities, I facilitated hands-on learning experiences that allowed students to grasp complex concepts in an accessible manner.</p>
+                            <div class="skills-used mt-2">
+                                <span class="badge bg-primary me-1">Python</span>
+                                <span class="badge bg-primary me-1">Networking</span>
+                                <span class="badge bg-primary me-1">Cybersecurity</span>
+                                <span class="badge bg-primary me-1">Teaching</span>
+                            </div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2020 - September 2022</span></div>
                     </div>
@@ -105,26 +121,18 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Associate Network Engineer</h3>
                             <div class="subheading mb-3">IDF Mamram</div>
-                            <p>Multi-vendor networking experience: Cisco, Check Point, Radware. <br>
-                                Skilled in architectural planning, involving low-level and high-level design,<br>
-                                and hands-on implementation, including devices configuration and security policies.<br>
-                                Proficiency in network protocols and standards.<br>
-                                Using Ansible and Python, I developed automated code that facilitate complex processes.<br>
-                                Capable of working independently as well as in a team within tight schedules.<br>
-                                Experienced in large complex organization.
-                                </p>
+                            <p>Multi-vendor networking experience with Cisco, Check Point, and Radware. Skilled in architectural planning, involving low-level and high-level design, and hands-on implementation, including device configuration and security policies. Using Ansible and Python, I developed automated code that facilitated complex processes. Capable of working independently as well as in a team within tight schedules in large complex organizations.</p>
+                            <div class="skills-used mt-2">
+                                <span class="badge bg-secondary me-1">Cisco</span>
+                                <span class="badge bg-secondary me-1">Check Point</span>
+                                <span class="badge bg-secondary me-1">Radware</span>
+                                <span class="badge bg-secondary me-1">Ansible</span>
+                                <span class="badge bg-secondary me-1">Python</span>
+                                <span class="badge bg-secondary me-1">Network Security</span>
+                            </div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">July 2013 — July 2017</span></div>
                     </div>
-                    <!--
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>-->
                 </div>
             </section>
             <hr class="m-0" />
@@ -133,21 +141,46 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Ben-Gurion University of the Negev,<br> Beer Sheva</h3>
+                            <h3 class="mb-0">Ben-Gurion University of the Negev</h3>
                             <div class="subheading mb-3">Bachelor of Science</div>
                             <div>Computer Science</div>
-                            
-                        <!--<div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
-                        </div>-->
+                            <p class="mt-2">Beer Sheva, Israel</p>
+                        </div>
                         <div class="flex-shrink-0"><span class="text-primary">2019 — 2022</span></div>
-        
-                   
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Certifications-->
+            <section class="resume-section" id="certifications">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Licenses & Certifications</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="certification-icon me-3">
+                                    <i class="fab fa-google text-primary" style="font-size: 2.5rem;"></i>
+                                </div>
+                                <div>
+                                    <h3 class="mb-0">Professional Cloud Architect Certification</h3>
+                                    <div class="subheading mb-3">Google Cloud</div>
+                                </div>
+                            </div>
+                            <p>Validates ability to design, develop, and manage robust, secure, scalable, highly available, and dynamic solutions to drive business objectives using Google Cloud technologies.</p>
+                            <div class="certification-details mb-3">
+                                <span class="badge bg-primary me-2">Cloud Architecture</span>
+                                <span class="badge bg-primary me-2">Infrastructure Design</span>
+                                <span class="badge bg-primary me-2">Security & Compliance</span>
+                                <span class="badge bg-primary me-2">Cost Optimization</span>
+                            </div>
+                            <a href="https://www.credly.com/badges/31cfa5d4-1e74-4df9-a55d-23145f4b6f88/linked_in_profile" target="_blank" class="btn btn-outline-primary">
+                                <i class="fas fa-external-link-alt me-2"></i>View Credential
+                            </a>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <span class="text-primary">Issued Apr 2025</span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -156,135 +189,271 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    
+                    <div class="subheading mb-3">Programming Languages & Technologies</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-git"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-aws"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-docker"></i></li>
-                        <li class="list-inline-item"><i class="fa-solid fa-database"></i></li>                      
-                        
+                        <li class="list-inline-item" title="Python"><i class="fa-brands fa-python"></i></li>
+                        <li class="list-inline-item" title="JavaScript"><i class="fa-brands fa-js"></i></li>
+                        <li class="list-inline-item" title="TypeScript"><i class="fa-brands fa-node-js"></i></li>
+                        <li class="list-inline-item" title="React"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item" title="Linux"><i class="fa-brands fa-linux"></i></li>
+                        <li class="list-inline-item" title="Git"><i class="fa-brands fa-git"></i></li>
+                        <li class="list-inline-item" title="AWS"><i class="fa-brands fa-aws"></i></li>
+                        <li class="list-inline-item" title="Google Cloud Platform"><i class="fab fa-google"></i></li>
+                        <li class="list-inline-item" title="Docker"><i class="fa-brands fa-docker"></i></li>
+                        <li class="list-inline-item" title="Terraform"><i class="fa-solid fa-cube"></i></li>
+                        <li class="list-inline-item" title="Database"><i class="fa-solid fa-database"></i></li>
                     </ul>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <!--
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="subheading mb-3">Technical Skills</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Network Engineering & Architecture</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Cybersecurity & Security Policies</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Python Development</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Cloud Computing (AWS, GCP)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="subheading mb-3">Tools & Platforms</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Cisco Network Solutions</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Ansible Automation</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Terraform Infrastructure as Code</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Docker & DevOps</li>
+                                <li class="mb-2"><i class="fas fa-check text-primary me-2"></i>Linux System Administration</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
-            -->
-            <!-- Interests-->
             
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <div class="project-icon">
+                                        <i class="fas fa-film"></i>
+                                    </div>
+                                    <h4 class="card-title">Movie Recommendation System</h4>
+                                    <p class="card-text">Developed a comprehensive movie recommendation system using machine learning algorithms to provide personalized movie suggestions based on user preferences and viewing history.</p>
+                                    <div class="mb-3">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">Machine Learning</span>
+                                        <span class="skill-badge">Data Analysis</span>
+                                    </div>
+                                    <a href="https://github.com/Nivhaham/Movie_recommendation_system" class="btn btn-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <div class="project-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <h4 class="card-title">University Projects Collection</h4>
+                                    <p class="card-text">A comprehensive collection of projects from my Computer Science BSc program, featuring C++ implementations, Java multithreading applications, client-server networking solutions, and SQL database integration with Python.</p>
+                                    <div class="mb-3">
+                                        <span class="skill-badge">C++</span>
+                                        <span class="skill-badge">Java</span>
+                                        <span class="skill-badge">Networking</span>
+                                        <span class="skill-badge">SQL</span>
+                                        <span class="skill-badge">Python</span>
+                                    </div>
+                                    <a href="https://github.com/Nivhaham/Some-University-Projects" class="btn btn-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <div class="project-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <h4 class="card-title">Reinforcement Learning</h4>
+                                    <p class="card-text">Implementation of various reinforcement learning algorithms and techniques, exploring different approaches to intelligent agent training and decision-making processes in dynamic environments.</p>
+                                    <div class="mb-3">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">Reinforcement Learning</span>
+                                        <span class="skill-badge">AI</span>
+                                    </div>
+                                    <a href="https://github.com/Nivhaham/ReinforcementLearning" class="btn btn-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <div class="project-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h4 class="card-title">Data Science Beginner</h4>
+                                    <p class="card-text">A foundational data science project collection covering essential concepts, data analysis techniques, visualization methods, and statistical modeling using Python libraries.</p>
+                                    <div class="mb-3">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">Data Science</span>
+                                        <span class="skill-badge">Statistics</span>
+                                        <span class="skill-badge">Visualization</span>
+                                    </div>
+                                    <a href="https://github.com/Nivhaham/Data-Science-Beginner" class="btn btn-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <div class="project-icon">
+                                        <i class="fas fa-calculator"></i>
+                                    </div>
+                                    <h4 class="card-title">Optimization Methods</h4>
+                                    <p class="card-text">Implementation of various mathematical optimization algorithms and techniques, exploring different approaches to solve complex optimization problems in computational mathematics.</p>
+                                    <div class="mb-3">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">Optimization</span>
+                                        <span class="skill-badge">Mathematics</span>
+                                        <span class="skill-badge">Algorithms</span>
+                                    </div>
+                                    <a href="https://github.com/Nivhaham/Optimization_methods" class="btn btn-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 mb-4">
+                            <div class="card h-100 shadow-sm project-card">
+                                <div class="card-body">
+                                    <div class="project-icon">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <h4 class="card-title">My Next.py</h4>
+                                    <p class="card-text">A Python-focused development project showcasing advanced programming concepts and practical implementations, demonstrating proficiency in Python development and software engineering practices.</p>
+                                    <div class="mb-3">
+                                        <span class="skill-badge">Python</span>
+                                        <span class="skill-badge">Software Engineering</span>
+                                        <span class="skill-badge">Development</span>
+                                    </div>
+                                    <a href="https://github.com/Nivhaham/My_Next.py" class="btn btn-primary" target="_blank">
+                                        <i class="fab fa-github me-1"></i>View on GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            
+            <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-3">My Philosophy</h2>
-                    <p>Embarking on a continuous, lifelong journey of becoming the best version I can be.<br>
-                         Without struggle, no progress and no result. Every breaking of habit produces a change in the machine. (George Gurdjieff)<br>
-                         The journey of a thousand miles begins with one step. (Lao Tzu)  <br>
-                         The best way to learn is by doing. The only way to build a strong work ethic is getting your hands dirty. (Alex Spanos)</p>
-                    <!--<p class="mb-0">Positivy <br> Honesty <br> Kindness</p>-->
+                    <p>Embarking on a continuous, lifelong journey of becoming the best version I can be. Without struggle, no progress and no result. Every breaking of habit produces a change in the machine. (George Gurdjieff)</p>
+                    <p>The journey of a thousand miles begins with one step. (Lao Tzu)</p>
+                    <p class="mb-0">The best way to learn is by doing. The only way to build a strong work ethic is getting your hands dirty. (Alex Spanos)</p>
                 </div>
             </section>
             <hr class="m-0" />
             
-            <!-- Awards-->
-            <!--
-            <section class="resume-section" id="awards">
+            <!-- Contact-->
+            <section class="resume-section" id="contact">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
+                    <h2 class="mb-5">Get In Touch</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p class="lead text-center mb-5">I'm always interested in new opportunities and collaborations. Whether you have a project in mind, need consulting on network security, or want to discuss technology trends, I'd love to hear from you.</p>
+                            
+                            <div class="card shadow">
+                                <div class="card-body text-center p-5">
+                                    <h4 class="card-title mb-4"><i class="fas fa-handshake me-2 text-primary"></i>Let's Connect</h4>
+                                    <p class="card-text mb-4">Ready to start a conversation? Choose your preferred method:</p>
+                                    
+                                    <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <a href="mailto:daganniv@gmail.com" class="btn btn-primary btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center py-3">
+                                                <i class="fas fa-envelope fa-2x mb-2"></i>
+                                                <span>Send Email</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="//api.whatsapp.com/send?phone=+972506781292&text=Hi Niv! I saw your portfolio, Let's talk!" target="_blank" class="btn btn-success btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center py-3">
+                                                <i class="fab fa-whatsapp fa-2x mb-2"></i>
+                                                <span>WhatsApp</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="https://www.linkedin.com/in/niv-dagan/" target="_blank" class="btn btn-primary btn-lg w-100 h-100 d-flex flex-column align-items-center justify-content-center py-3">
+                                                <i class="fab fa-linkedin fa-2x mb-2"></i>
+                                                <span>LinkedIn</span>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <div class="contact-info-item">
+                                                <i class="fas fa-phone text-primary me-2"></i>
+                                                <a href="tel:+972506781292" class="text-decoration-none">+972-50-678-1292</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="contact-info-item">
+                                                <i class="fab fa-github text-primary me-2"></i>
+                                                <a href="https://github.com/Nivhaham" target="_blank" class="text-decoration-none">github.com/Nivhaham</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4 pt-3 border-top">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                            <span class="text-muted">Available for new projects • Response within 24 hours</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-        </div>
-        -->
+            <hr class="m-0" />
 
-        <!-- Lucas -->
-        <section class="resume-section" id="Lucas">
-            <div class="resume-section-content">
-                <h2 class="mb-3"></h2>
+            <!-- Lucas -->
+            <section class="resume-section" id="lucas">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Bonus Gallery</h2>
+                    <p class="lead mb-4">A collection of special moments and memories.</p>
                     <div class="lucas-photos">
-                        
-                        <img src="assets/img/Lucas/IMG-20230501-WA0030.jpg" alt="Image 5">
-                        <img src="assets/img/Lucas/20230911_104223.jpg" alt="Image 1">
-                        <img src="assets/img/Lucas/SHO_1291_Resize.jpg" alt="Image 3">
-                        <img src="assets/img/Lucas/IMG-20240330-WA0023_RESIZE.jpg" alt="Image 2"> 
-                        <img src="assets/img/Lucas/BeautifulLucas.jpg" alt="Image 6">
-                        <img src="assets/img/Lucas/GOPR2687~3.jpg" alt="Image 4">
-                        
-                        
-                        <!--<img src="assets/img/Lucas/Screenshot_20230715_145408_Photos.jpg" alt="Image 1"> -->
-                        <!--<img src="assets/img/Lucas/IMG-20230624-WA0020.jpg" alt="Image 3"> -->
-                        <!--<img src="assets/img/Lucas/IMG-20231230-WA0009.jpg" alt="Image 4"> -->
-                        <!--<img src="assets/img/Lucas/20230923_194823.jpg" alt="Image 5"> -->
-                        
+                        <img src="assets/img/Lucas/IMG-20230501-WA0030.jpg" alt="Memory 1" loading="lazy">
+                        <img src="assets/img/Lucas/20230911_104223.jpg" alt="Memory 2" loading="lazy">
+                        <img src="assets/img/Lucas/SHO_1291_Resize.jpg" alt="Memory 3" loading="lazy">
+                        <img src="assets/img/Lucas/IMG-20240330-WA0023_RESIZE.jpg" alt="Memory 4" loading="lazy"> 
+                        <img src="assets/img/Lucas/BeautifulLucas.jpg" alt="Memory 5" loading="lazy">
+                        <img src="assets/img/Lucas/GOPR2687~3.jpg" alt="Memory 6" loading="lazy">
                     </div>
-
-            <!--    <p class="mb-0">Positivy <br> Honesty <br> Kindness</p> -->
-            </div>
-        </section>    
+                </div>
+            </section>    
+        </div>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
