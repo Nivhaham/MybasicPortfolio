@@ -79,31 +79,76 @@ window.addEventListener('DOMContentLoaded', event => {
     const darkModeToggle = document.createElement('div');
     darkModeToggle.className = 'dark-mode-toggle';
     darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    darkModeToggle.setAttribute('aria-label', 'Toggle dark mode');
+    darkModeToggle.setAttribute('role', 'button');
+    darkModeToggle.setAttribute('tabindex', '0');
     document.body.appendChild(darkModeToggle);
 
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-        document.documentElement.setAttribute('data-theme', savedTheme);
-        if (savedTheme === 'dark') {
-            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    // Check for saved theme preference or system preference
+    const initializeTheme = () => {
+        const savedTheme = localStorage.getItem('theme');
+        let theme = 'light';
+        
+        if (savedTheme) {
+            theme = savedTheme;
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            theme = 'dark';
         }
-    }
+        
+        document.documentElement.setAttribute('data-theme', theme);
+        updateThemeIcon(theme);
+        return theme;
+    };
 
-    // Dark mode toggle functionality
-    darkModeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        
-        if (newTheme === 'dark') {
+    // Update theme icon
+    const updateThemeIcon = (theme) => {
+        if (theme === 'dark') {
             darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            darkModeToggle.setAttribute('aria-label', 'Switch to light mode');
         } else {
             darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            darkModeToggle.setAttribute('aria-label', 'Switch to dark mode');
+        }
+    };
+
+    // Initialize theme
+    let currentTheme = initializeTheme();
+
+    // Dark mode toggle functionality
+    const toggleTheme = () => {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        localStorage.setItem('theme', currentTheme);
+        updateThemeIcon(currentTheme);
+        
+        // Add visual feedback
+        darkModeToggle.style.transform = 'scale(0.9)';
+        setTimeout(() => {
+            darkModeToggle.style.transform = 'scale(1)';
+        }, 150);
+    };
+
+    darkModeToggle.addEventListener('click', toggleTheme);
+    
+    // Keyboard accessibility
+    darkModeToggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleTheme();
         }
     });
+
+    // Listen for system theme changes
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                currentTheme = e.matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', currentTheme);
+                updateThemeIcon(currentTheme);
+            }
+        });
+    }
 
     // Enhanced Navigation Active State
     const sections = document.querySelectorAll('section[id]');
